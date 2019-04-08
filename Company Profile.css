@@ -1,0 +1,119 @@
+body {
+  font-family: 'Libre+Baskerville', serif;
+  font-size: 24px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+body {
+  background-image: url("sausage.jpg");
+  background-size: cover;
+}
+
+#Company Profile{
+     background-color:#FFFFFF;
+     filter:alpha(opacity=85);
+     -moz-opacity:0.85;
+     -khtml-opacity: 0.85;
+     opacity:0.85;
+}
+
+h1 {
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+}
+
+.demo   {
+    background: url(images/bg1.gif);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.opacity    {
+    background: #333;
+    padding: 10px;
+    border: 5px solid #000;
+    color: #fff;
+    opacity: 0.6;
+}
+
+span {
+   background-color: rgba( 255, 255, 255 );
+   color: white
+ }
+
+  h1:after {
+
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+
+
+table.company {
+width: 500px;
+margin: 0 auto;
+border-collapse: separate;
+border-spacing: 0px 15px;
+font-size: 12px;
+}
+
+table.company th,
+table.company td {
+padding: 10px;
+}
+
+table.company th {
+background: #FE2E2E;
+vertical-align: middle;
+text-align: left;
+width: 100px;
+overflow: visible;
+position: relative;
+color: #fff;
+font-weight: normal;
+font-size: 15px;
+}
+
+table.company th:after {
+left: 100%;
+top: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-color: rgba(255, 0, 0, 0);
+border-left-color: #FE2E2E;
+border-width: 10px;
+margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+table.company th::after {
+float: right;
+padding: 0;
+left: 30px;
+top: 10px;
+content: " ";
+height: 0;
+width: 0;
+position: relative;
+pointer-events: none;
+border: 10px solid transparent;
+border-left: #FE2E2E 10px solid;
+margin-top: -10px;
+}
+}
+
+table.company td {
+background: #f8f8f8;
+width: 360px;
+padding-left: 20px;
+}
